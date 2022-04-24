@@ -11,12 +11,14 @@ function renderLicenseBadge(license){
 
 }
 
+//License Info placeholder
+
 //this function returns the license link, unless there is no license. Then it will return an empty string
 function renderLicenseLink(license) {
 
 }
 
-//Function returs the license section of the README, unless there is not one. Then it returns an empty string
+//Function returns the license section of the README, unless there is not one. Then it returns an empty string
 function renderLicenseSection(license) {
 
 }
@@ -25,7 +27,18 @@ function renderLicenseSection(license) {
 //README is modeled after the template that can be found here: https://coding-boot-camp.github.io/full-stack/github/professional-readme-guide The README parts were modeled after this template.
 function generateMarkdown(data) {
     return `# ${data.title}
-    
+
+${renderLicenseBadge(data.licenseType)}
+
+## Table of Contents
+
+- [Description](#Application-Description)
+- [Steps for Install](#Steps-for-Install)
+- [Usage Instructions](#User-Instructions)
+- [Contributions](#Contribution-Guidelines)
+- [Test Instructions](#Test-Instructions)
+- [Licensing](#Licensing)
+
 ## Application Description 
 ${data.description}
 
@@ -35,11 +48,17 @@ ${data.installationSteps}
 ## User Instructions
 ${data.instructions}
 
-## Credits/Shoutouts
+## Contribution Guidelines
 ${data.credits}
 
+## Test Instructions
+${data.tests}
+
 ## Licensing
-${renderLicenseBadge(data.license)}
+${data.licenseInfo}
+
+## Questions?
+If you have additional questions you contact via GitHub at [${data.userGitHub}](https://github.com/${data.userGitHub}). Also, you can email your inquiries to [${data.userEmail}]("mailto:${data.userEmail}")
     `;
 }
 
