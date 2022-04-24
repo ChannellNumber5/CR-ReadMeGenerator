@@ -12,8 +12,7 @@ const questions = [
     {type:"input", name:"instructions", message:"Please provide quick instructions for use of your project/app"},
     {type:"input", name:"tests", message:"Please describe out the requirements and instructions for testing your application"},
     {type:"input", name:"credits", message:"Anyone/thing you'd like to credit? Please input them now"}, 
-    {type:"list", name:"license", message:"Please select the license for this project?", choices: ["Apache License 2.0", "GNU GPLv3", "GNU GPLv2", "MIT", "ISC License"]},
-    {type:"list", name:"licenseInfo", message:"Please input some information about the license that this project is covered under."}
+    {type:"list", name:"license", message:"Please select the license for this project?", choices: ["Apache License 2.0", "GNU GPLv3", "GNU GPLv2", "MIT", "ISC License"]}
 ];
 
 //Creates a function to write a README file
