@@ -64,17 +64,17 @@ function generateMarkdown(data) {
 
 ${renderLicenseBadge(data.license)}
 
-## Table of Contents
-
-- [Description](#Application-Description)
-- [Steps for Install](#Steps-for-Install)
-- [Usage Instructions](#User-Instructions)
-- [Contributions](#Contribution-Guidelines)
-- [Test Instructions](#Test-Instructions)
-- [Licensing](#Licensing)
-
 ## Application Description 
 ${data.description}
+
+## Table of Contents
+- [Steps for Install](#steps-for-install)
+- [Usage Instructions](#user-instructions)
+- [Contributions](#contribution-guidelines)
+- [Test Instructions](#test-instructions)
+- [Licensing](#licensing)
+- [Questions](#questions)
+
 
 ## Steps for Install
 ${data.installationSteps}
@@ -90,7 +90,7 @@ ${data.tests}
 
 ${renderLicenseSection(data.license)}
 
-## Questions?
+## Questions
 If you have additional questions you contact via GitHub at [${data.userGitHub}](https://github.com/${data.userGitHub}). Also, you can email your inquiries to [${data.userEmail}]("mailto:${data.userEmail}")
     `;
 }
