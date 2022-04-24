@@ -14,7 +14,7 @@ function renderLicenseBadge(license){
    } else if(license === "MIT") {
        return `![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)`;
    } else{
-       return "";
+       return " ";
    }
 
 }
@@ -46,12 +46,13 @@ function renderLicenseLink(license) {
 
 //Function returns the license section of the README, unless there is not one. Then it returns an empty string
 function renderLicenseSection(license) {
-if (!license === " "){
-    return `## Licensing
-This project is covered under the ${license} license. Here is the [link](${renderLicenseLink(license.license)}) for more information about this license type.
-`
-} else {
+if (license === "none") {
     return " ";
+
+} else {
+    return `## Licensing
+This project is covered under the ${license} license. Here is the [link](${renderLicenseLink(license)}) for more information about this license type.
+`
 }
     
 }
@@ -61,7 +62,7 @@ This project is covered under the ${license} license. Here is the [link](${rende
 function generateMarkdown(data) {
     return `# ${data.title}
 
-${renderLicenseBadge(data.licenseType)}
+${renderLicenseBadge(data.license)}
 
 ## Table of Contents
 
