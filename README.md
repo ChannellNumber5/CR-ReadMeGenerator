@@ -11,6 +11,7 @@ This application will create the perfect README markdown file, based on unique p
 - [Contributions](#contribution-guidelines)
 - [Test Instructions](#test-instructions)
 - [Licensing](#licensing)
+- [Contact Info](#contact-info)
 - [Questions](#questions)
 
 
@@ -28,6 +29,15 @@ Currently, there are no requirements or instructions for testing for this applic
 
 ## Licensing
 This project is covered under the MIT license. Here is the [link](https://opensource.org/licenses/MIT) for more information about this license type.
+
+
+## Contact Info
+
+Christina Robinson
+
+Email: [CLRCoding@gmail.com](mailto:CLRCoding@gmail.com)
+
+Github: [ChannellNumber5](https://github.com/ChannellNumber5)
 
 
 ## Questions
